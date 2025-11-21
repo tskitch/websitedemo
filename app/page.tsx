@@ -1,24 +1,26 @@
+import ElectricBorder from "@/app/components/ElectricBorder";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate- to-slate-950 text-slate-100">
       {/* NAVBAR */}
       <header className="border-b border-white/5 bg-slate-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           {/* Brand */}
-          <a href="#top" className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-red-500 to-amber-400 shadow-lg shadow-red-500/40">
-              <span className="text-lg font-black tracking-tight">FL</span>
+          <a href="#top" className="flex items-center gap-5">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-red-600 to-red-700 shadow-red-600/30">
+              <span className="text-lg font-black tracking-tight">FLP</span>
             </div>
             <div className="flex flex-col leading-tight">
               <span className="text-sm font-semibold uppercase tracking-[0.18em] text-red-400">
-                Fast Lane
+                Fast Lane Precision
               </span>
               <span className="text-sm text-slate-300">Precision CNC Machining</span>
             </div>
           </a>
 
           {/* Links */}
-          <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
+          <nav className="hidden gap-12 text-sm text-slate-300 md:flex">
             <a href="#capabilities" className="hover:text-white">
               Capabilities
             </a>
@@ -34,10 +36,23 @@ export default function Home() {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="rounded-xl border border-red-500/40 bg-gradient-to-r from-red-500/80 to-amber-400/80 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-red-500/40 transition hover:brightness-110"
+              className="rounded-lg border border-red-600/40
+    bg-gradient-to-b from-zinc-900 to-black
+    px-4 py-2 text-sm font-semibold text-zinc-200
+
+    /* --- ALWAYS-ON GLOW --- */
+    shadow-[0_0_22px_rgba(220,38,38,0.45),0_0_45px_rgba(220,38,38,0.28)]
+
+    /* --- HOVER GLOW (stronger) --- */
+    hover:shadow-[0_0_32px_rgba(220,38,38,0.55),0_0_60px_rgba(220,38,38,0.40)]
+    hover:border-red-500/60
+
+    transition"
             >
               Request a Quote
             </a>
+            
+
           </div>
         </div>
       </header>
@@ -48,13 +63,13 @@ export default function Home() {
         <section className="grid gap-12 md:grid-cols-[1.3fr_1fr] md:items-center">
           <div className="space-y-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-500/5 px-3 py-1 text-xs font-semibold tracking-wide text-red-300">
-              ● Riverside, CA &bull; CNC Machining
+               Riverside, CA &bull; CNC Machining
             </span>
 
             <h1 className="text-balance text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               Precision parts.
               <br />
-              <span className="bg-gradient-to-r from-red-400 via-amber-300 to-emerald-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-red-500 to-red-400 bg-clip-text text-transparent">
                 Tight tolerances.
               </span>
             </h1>
@@ -68,7 +83,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href="#contact"
-                className="rounded-xl bg-red-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-red-500/40 transition hover:bg-red-400"
+                className="rounded-lg border border-red-600/30 bg-gradient-to-b from-zinc-900 to-black px-4 py-2 text-sm font-semibold text-zinc-200 shadow-[0_0_10px_rgba(220,38,38,0.15)] hover:border-red-500/40 hover:shadow-[0_0_14px_rgba(220,38,38,0.25)] transition"
               >
                 Start a Quote
               </a>
@@ -93,7 +108,7 @@ export default function Home() {
           </div>
 
           {/* HERO SIDE PANEL */}
-          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-[0_0_60px_rgba(248,113,113,0.25)]">
+          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-[0_0_40px_rgba(220,38,38,0.18)]">
             <div className="mb-4 flex items-center justify-between text-xs text-slate-400">
               <span>Live Capacity Snapshot</span>
               <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-300">
