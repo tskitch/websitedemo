@@ -61,7 +61,7 @@ export default function Home() {
             >
               <a
                 href="#contact"
-                className="px-3 py-1 text-sm font-semibold text-emerald-200"
+                className="px-3 py-1.5 text-sm font-semibold text-emerald-200"
                 style={{
                   display: "inline-block",
                 }}
@@ -98,22 +98,12 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <ElectricBorder
-              color="#00ffcc"
-              speed={1.2}
-              chaos={0.6}
-              thickness={2}
-              style={{ borderRadius: 10 }}
-            >
               <a
                 href="#contact"
-                className="px-4 py-2 text-sm font-semibold text-emerald-200"
-                style={{ display: "inline-block" }}
+                className="rounded-lg border border-red-600/30 bg-gradient-to-b from-zinc-900 to-black px-4 py-2 text-sm font-semibold text-zinc-200 shadow-[0_0_10px_rgba(220,38,38,0.15)] hover:border-red-500/40 hover:shadow-[0_0_14px_rgba(220,38,38,0.25)] transition"
               >
                 Start a Quote
               </a>
-</ElectricBorder>
-
               <a
                 href="#capabilities"
                 className="rounded-xl border border-white/10 px-5 py-2.5 text-sm font-semibold text-slate-200 hover:border-white/30 hover:bg-white/5"
