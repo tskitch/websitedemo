@@ -51,7 +51,24 @@ export default function Home() {
             >
               Request a Quote
             </a>
-            
+            {/* EXPEDITE BUTTON WITH ELECTRIC BORDER */}
+            <ElectricBorder
+              color="#00ffcc"
+              speed={1.2}
+              chaos={0.6}
+              thickness={2}
+              style={{ borderRadius: 10, marginLeft: '12px' }}
+            >
+              <a
+                href="#contact"
+                className="px-3 py-1 text-sm font-semibold text-emerald-200"
+                style={{
+                  display: "inline-block",
+                }}
+              >
+                Expedite
+              </a>
+            </ElectricBorder>
 
           </div>
         </div>
